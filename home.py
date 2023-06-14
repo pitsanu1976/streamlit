@@ -6,6 +6,7 @@ st.set_page_config(
 )
 
 st.title('Main Page')
+st.header('this is the home page')
 st.sidebar.success('select a page above')
 
 if "my_input" not in st.session_state:
