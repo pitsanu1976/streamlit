@@ -3,12 +3,14 @@ import streamlit as st
 import pandas as pd
 
 a = [[1,2,3],[4,5,6],[7,8,9]]
-data = pd.DataFrame(a,columns=['a','b','c'])
-
+b = [[1,2,3],[4,5,6],[7,8,9]]
+data1 = pd.DataFrame(a,columns=['a','b','c'])
+data2 = pd.DataFrame(b,columns=['a','b','c'])
 st.title('Project')
 
 st.header('header for project')
 
 st.write('you enter',st.session_state['my_input'])
-
-st.write(data)
+c,d = st.columns(2)
+c.st.write(data1)
+d.st.write(data2)
