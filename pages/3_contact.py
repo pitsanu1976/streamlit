@@ -15,4 +15,4 @@ def openai_chat(prompt):
     return message.strip()
 
 prompt_text = st.input_text('enter prompt:')
-st.text_area(openai_chat(prompt_text))
+st.write(openai_chat(prompt_text))
