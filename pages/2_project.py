@@ -13,6 +13,8 @@ st.header('header for project')
 st.write('you enter',st.session_state['my_input'])
 c,d = st.columns(2)
 with c:
+    st.header('data1')
     st.write(data1)
 with d:
+    st.header('data2')
     st.write(data2)
