@@ -10,7 +10,7 @@ st.title('Project')
 
 st.header('header for project')
 
-st.write('you enter',st.session_state['my_input'])
+
 c,d = st.columns(2)
 with c:
     st.header('data1')
